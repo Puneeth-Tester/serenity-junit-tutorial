@@ -8,6 +8,7 @@ import serenityswag.authentication.actions.LoginActions;
 import serenityswag.inventory.InventoryPage;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static serenityswag.authentication.User.STANDARD_USER;
 
 
 @RunWith(SerenityRunner.class)
@@ -22,7 +23,7 @@ public class WhenLoggingOn {
         // To generate clubbed report
         // mvn serenity:aggregate
 
-        login.usingCredentials("standard_user", "secret_sauce");
+        login.as(STANDARD_USER);
 
         assertThat(inventoryPage.getHeading()).isEqualToIgnoringCase("Products");
     }
