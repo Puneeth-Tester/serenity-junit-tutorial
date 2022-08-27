@@ -1,8 +1,7 @@
-package serenityswag.authentication.actions;
+package serenityswag.authentication;
 
 import net.serenitybdd.core.steps.UIInteractionSteps;
 import net.thucydides.core.annotations.Step;
-import serenityswag.authentication.User;
 
 public class LoginActions extends UIInteractionSteps {
 

@@ -5,7 +5,6 @@ import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import serenityswag.authentication.actions.LoginActions;
 import serenityswag.inventory.InventoryPage;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -23,6 +22,9 @@ public class WhenLoggingOn {
     public void usersCanLogOnViaTheHomePage(){
         // To generate clubbed report
         // mvn serenity:aggregate
+
+        // To execute using maven command
+        // mvn clean verify
 
         login.as(STANDARD_USER);
 
