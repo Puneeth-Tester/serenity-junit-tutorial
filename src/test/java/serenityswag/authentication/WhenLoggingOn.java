@@ -22,7 +22,7 @@ public class WhenLoggingOn {
         // To generate clubbed report
         // mvn serenity:aggregate
 
-        login.asAStandardUser();
+        login.usingCredentials("standard_user", "secret_sauce");
 
         assertThat(inventoryPage.getHeading()).isEqualToIgnoringCase("Products");
     }
